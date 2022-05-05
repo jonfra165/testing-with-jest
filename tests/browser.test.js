@@ -37,8 +37,8 @@ test('Clicking "Pusha till stacken", and push ', async () => {
     let peek = await driver.findElement(By.id('peek'));
     await peek.click();
     let stack = await driver.findElement(By.id('top_of_stack')).getText();
-    expect(stack).toEqual("n/a");
-    
+    expect(stack).toEqual("undefined");
+
 
 });
 
