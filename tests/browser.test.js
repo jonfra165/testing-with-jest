@@ -23,7 +23,7 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
-test('Clicking "Pusha till stacken", and push ', async () => {
+test('Clicking "Pusha till stacken", push a string to the stack, and then clicking "Poppa stacken", and pop the string from the stack', async () => {
     let push = await driver.findElement(By.id('push'));
     await push.click();
     let alert = await driver.switchTo().alert();
